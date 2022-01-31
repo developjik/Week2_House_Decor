@@ -6,7 +6,6 @@
 .prettierrc
 .prettierignore
 yarn.lock
-tsconfig.json
 
 # dependencies
 /node_modules
