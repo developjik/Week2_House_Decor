@@ -1,0 +1,30 @@
+.title {
+    padding: 40px 0;
+    
+    &-date {
+        font-size: 10px;
+        color: #646464;
+        padding: 0px 0px 8px;
+        letter-spacing: 0.5px;
+    }
+    
+    &-title {
+        font-size: 28px;
+        font-weight: 700;
+        padding: 0px 0px 8px;
+    }
+
+    &-tags {
+        font-size: 15px;
+        color: #646464;
+    }
+
+    &-lockers-comments {
+        font-size: 15px;
+        color: #333333;
+        margin: 15px 0 0 0;
+        span {
+            margin: 0 20px 0 0;
+        }
+    }
+}
