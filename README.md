@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# 🔥 Week Optional Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🧱 원티드 프리온보딩 프론트엔드 코스 - 과제
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+## 🌎 배포
 
-### `npm start`
+[배포 링크]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 👋🏻 팀원 소개
 
-### `npm test`
+| 이름                                       | 담당 기능                                                          |
+| ------------------------------------------ | ------------------------------------------------------------------ |
+| [정인권](https://github.com/developjik)    | 2번 환율 계산기 담당, select 입력 및 상태 관리, API 로직 구현  |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `npm run build`
+## ✔ 과제 구현 목록
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 프로젝트 설치 및 실행
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Git Clone
 
-### `npm run eject`
+```plaintext
+$ git clone https://github.com/PreOnBoarding-Team17/Week1_Exchange_Rate_Calculator.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. 프로젝트 패키지 설치
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```plaintext
+$ yarn install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. 프로젝트 실행
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```plaintext
+$ yarn start
+```
 
-## Learn More
+<br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌲 프로젝트 구조
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
+
+## 📽 시연 영상
+
+
+
+

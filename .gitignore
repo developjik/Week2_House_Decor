@@ -1,5 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+// 내가 추가한 것
+.vscode
+.eslintrc.json
+.prettierrc
+.prettierignore
+yarn.lock
+tsconfig.json
+
 # dependencies
 /node_modules
 /.pnp
