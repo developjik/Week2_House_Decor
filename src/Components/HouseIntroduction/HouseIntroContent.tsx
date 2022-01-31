@@ -20,6 +20,7 @@ type data = {
 
 function HomeIntroContent() {
   const [datas, setDatas] = useState<data>();
+  const [number, setNumber] = useState<number>(-1);
 
   useEffect(() => {
     async function fetchData() {
@@ -31,7 +32,6 @@ function HomeIntroContent() {
     }
 
     fetchData();
-    console.log(datas);
   }, []);
 
   return (
@@ -45,102 +45,101 @@ function HomeIntroContent() {
               alt="house-img"
             />
 
-            <div className="tooltip" style={{ top: "800px", left: "320px" }}>
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/search.png"
-                alt="search-img"
-              />
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/close.png"
-                alt="close-img"
-              />
-            </div>
-            <div className="tooltip" style={{ top: "530px", left: "290px" }}>
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/search.png"
-                alt="search-img"
-              />
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/close.png"
-                alt="close-img"
-              />
-            </div>
-            <div className="tooltip" style={{ top: "475px", left: "150px" }}>
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/search.png"
-                alt="search-img"
-              />
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/close.png"
-                alt="close-img"
-              />
-            </div>
-            <div className="tooltip" style={{ top: "250px", left: "330px" }}>
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/search.png"
-                alt="search-img"
-              />
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/close.png"
-                alt="close-img"
-              />
-            </div>
-            <div className="tooltip" style={{ top: "340px", left: "720px" }}>
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/search.png"
-                alt="search-img"
-              />
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/close.png"
-                alt="close-img"
-              />
-            </div>
-            <div className="tooltip" style={{ top: "580px", left: "450px" }}>
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/search.png"
-                alt="search-img"
-              />
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/close.png"
-                alt="close-img"
-              />
-            </div>
-            <div className="tooltip" style={{ top: "290px", left: "200px" }}>
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/search.png"
-                alt="search-img"
-              />
-              <img
-                className="tooltip-img tooltip-active"
-                src="img/close.png"
-                alt="close-img"
-              />
-            </div>
+            {datas.productList.map((p: product, idx: number) => (
+              <div
+                key={p.productId}
+                className="tooltip"
+                style={{
+                  top: `${p.pointX * 1.65}px`,
+                  left: `${p.pointY * 1.65}px`,
+                }}
+              >
+                {number !== idx ? (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setNumber(idx);
+                    }}
+                  >
+                    <img src="img/search.png" alt="search-img" />
+                  </button>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setNumber(-1);
+                      }}
+                    >
+                      <img src="img/close.png" alt="close-img" />
+                    </button>
+
+                    <div className="tooltip--description">
+                      <img
+                        src={datas.productList[number].imageUrl}
+                        alt={String(datas.productList[number].productId)}
+                      />
+                      <div className="tooltip--description__detail">
+                        <div className="tooltip--description__detail--name">
+                          {datas.productList[number].productName}
+                        </div>
+                        {datas.productList[number].outside ? (
+                          <div>
+                            <span className="tooltip--description__detail--estimate">
+                              예상가
+                            </span>
+                            <span className="tooltip--description__detail--price">
+                              {datas.productList[
+                                number
+                              ].priceDiscount.toLocaleString("eu")}
+                            </span>
+                          </div>
+                        ) : (
+                          <div>
+                            <span className="tooltip--description__detail--salesRate">
+                              {datas.productList[number].discountRate}%
+                            </span>
+                            <span className="tooltip--description__detail--price">
+                              {datas.productList[
+                                number
+                              ].priceDiscount.toLocaleString("eu")}
+                            </span>
+                          </div>
+                        )}
+                        <img
+                          src="//cdn.ggumim.co.kr/storage/20211102181936xqHzyWAmb8.png"
+                          alt="상품 보기"
+                        />
+                        <div />
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
           </div>
 
           <div className="content__products">
-            {datas.productList.map((p: product) => (
+            {datas.productList.map((p: product, idx: number) => (
               <div key={p.productId} className="content__products--product">
-                <img src={p.imageUrl} alt={String(p.productId)} />
-                {p.discountRate > 0 && (
-                  <div className="discount">
-                    {p.discountRate}
-                    <span>%</span>
-                  </div>
-                )}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setNumber(idx);
+                  }}
+                >
+                  <img
+                    className={number === idx ? "active" : "no-active"}
+                    src={p.imageUrl}
+                    alt={String(p.productId)}
+                  />
+                  {p.discountRate > 0 && (
+                    <div className="discount">
+                      {p.discountRate}
+                      <span>%</span>
+                    </div>
+                  )}
+                </button>
               </div>
             ))}
           </div>
