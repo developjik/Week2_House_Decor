@@ -8,6 +8,7 @@ import HouseIntroContentProduct from "./HouseIntroContentProduct";
 function HomeIntroContent() {
   const [datas, setDatas] = useState<data>();
   const [number, setNumber] = useState<number>(-1);
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDrag, setIsDrag] = useState(false);
   const [startX, setStartX] = useState(0);

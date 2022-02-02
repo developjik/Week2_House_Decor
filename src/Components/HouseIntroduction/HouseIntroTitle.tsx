@@ -3,11 +3,11 @@ import { titleDatasType } from "Common/Types/types";
 
 import "Components/HouseIntroduction/Scss/HouseIntroTitle.scss";
 
-type TitleProps = {
+type propsType = {
   titleDatas: titleDatasType;
 };
 
-function HouseIntroTitle({ titleDatas }: TitleProps) {
+function HouseIntroTitle({ titleDatas }: propsType) {
   return (
     <div className="title-container">
       <div className="title">
