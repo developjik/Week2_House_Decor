@@ -69,3 +69,32 @@
        }
     }
 }
+
+.tooltip--description__bottom-left {
+    top: -130px;
+    left: -27px;
+}
+.tooltip--description__bottom-left::before {
+    top: 86px;
+    left: 34px;
+    transform: rotate(180deg);
+}
+
+.tooltip--description__bottom-right {
+    top: -130px;
+    left: -160px;
+}
+.tooltip--description__bottom-right::before {
+    top: 86px;
+    left: 170px;
+    transform: rotate(180deg);
+}
+
+.tooltip--description__top-right {
+    top: 0px;
+    left: -170px;
+}
+.tooltip--description__top-right::before {
+    top: -8px;
+    left: 180px;
+}

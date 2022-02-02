@@ -3,19 +3,25 @@ import { data } from "Common/Types/types";
 import "Components/HouseIntroduction/Scss/HouseIntroContentTooltipDescription.scss";
 
 type propsType = {
+  topLocation: string;
+  leftLocation: string;
   idx: number;
   number: number;
   datas: data;
 };
 
 function HouseIntroContentTooltipDescription({
+  topLocation,
+  leftLocation,
   idx,
   number,
   datas,
 }: propsType) {
   if (number !== idx) return null;
   return (
-    <div className="tooltip--description">
+    <div
+      className={`tooltip--description tooltip--description__${topLocation}-${leftLocation}`}
+    >
       <img
         src={datas.productList[idx].imageUrl}
         alt={String(datas.productList[idx].productId)}

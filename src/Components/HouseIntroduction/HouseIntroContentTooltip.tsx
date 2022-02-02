@@ -4,6 +4,8 @@ import HouseIntroContentTooltipDescription from "./HouseIntroContentToolTipDescr
 import "Components/HouseIntroduction/Scss/HouseIntroContentTooltip.scss";
 
 type propsType = {
+  width: number;
+  height: number;
   idx: number;
   number: number;
   p: product;
@@ -12,18 +14,26 @@ type propsType = {
 };
 
 function HouseIntroContentTooltip({
+  width,
+  height,
   idx,
   number,
   p,
   datas,
   setNumber,
 }: propsType) {
+  const top = `${p.pointX * 1.65}px`;
+  const left = `${p.pointY * 1.65}px`;
+
+  const topLocation = p.pointX * 1.65 >= height * 0.4 ? "bottom" : "top";
+  const leftLocation = p.pointY * 1.65 >= width * 0.4 ? "right" : "left";
+
   return (
     <div
-      className="tooltip"
+      className="tooltip tooltip"
       style={{
-        top: `${p.pointX * 1.65}px`,
-        left: `${p.pointY * 1.65}px`,
+        top,
+        left,
       }}
     >
       <button
@@ -45,6 +55,8 @@ function HouseIntroContentTooltip({
 
       <HouseIntroContentTooltipDescription
         idx={idx}
+        topLocation={topLocation}
+        leftLocation={leftLocation}
         number={number}
         datas={datas}
       />
