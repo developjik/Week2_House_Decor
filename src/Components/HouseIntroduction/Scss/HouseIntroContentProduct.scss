@@ -18,7 +18,7 @@
                 .discount {
                     position: absolute;
                     top: 0.5px;
-                    right: 6px;
+                    right: 5px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -26,6 +26,7 @@
                     height: 28px;
                     font-size: 11px;
                     color: #fff;
+                    padding: 0 0 0 1px;
                     background-image: url("//cdn.ggumim.co.kr/storage/20211117191419RW6JS6bjRm.png");
                     background-size: contain;
                 }
