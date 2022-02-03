@@ -22,7 +22,6 @@
   - ToolTip이 노출되고 있는 상태에서 다른 가구를 선택하면 노출되고 있 던 ToolTip은 닫히고 새로 클릭한 가구 ToolTip만 노출
   - 가구 정보는 2가지 형식에 맞게 나타나도록 구현
   - ToolTip이 위치에 따라서 나타나는 모양 다른것을 위치에 따라서 구현
-<br/>
 - 상품 목록 기능
   - 상품목록에서 해당 가구가 선택되었으면 tool tip 출력
   - 상품목록 Drag해서 Scroll 가능하게 구현
@@ -95,19 +94,17 @@ src
 
 ## 📽 시연 영상
 
-- ToolTips 기능
-  - 돋보기를 클릭하면 상품정보 tool tip 출력되면서 돋보기모양이 닫기 버튼으로 변경
+- ToolTips 기능1 : 돋보기를 클릭하면 상품정보 tool tip 출력되면서 돋보기모양이 닫기 버튼으로 변경
 ![tooltip1](https://user-images.githubusercontent.com/67889389/152312776-a1bd2d2a-a7b0-4a88-9c84-62ea51cfe290.gif)
   <br/>
-  - ToolTip이 노출되고 있는 상태에서 다른 가구를 선택하면 노출되고 있 던 ToolTip은 닫히고 새로 클릭한 가구 ToolTip만 노출
+- ToolTip 기능2 : ToolTip이 노출되고 있는 상태에서 다른 가구를 선택하면 노출되고 있 던 ToolTip은 닫히고 새로 클릭한 가구 ToolTip만 노출
 ![tooltip2](https://user-images.githubusercontent.com/67889389/152313817-339a0a60-e400-48d8-b231-eae623e08e57.gif)
   <br/>
 
-- 상품 목록 기능
-  - 상품목록에서 해당 가구가 선택되었으면 tool tip 출력
+- 상품 목록 기능1 : 상품목록에서 해당 가구가 선택되었으면 tool tip 출력
   ![product](https://user-images.githubusercontent.com/67889389/152314685-955b4a2c-1d4c-4995-b2c1-6f392247a92a.gif)
   <br/>
-  - 상품목록 Drag해서 Scroll 가능하게 구현
+- 상품 목록 기능2 : 상품목록 Drag해서 Scroll 가능하게 구현
   ![product-scroll](https://user-images.githubusercontent.com/67889389/152314703-8c5006a9-b35b-441e-a410-5879caa3e5ee.gif)
   <br/>
 
