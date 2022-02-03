@@ -96,7 +96,8 @@ src
 
 - ToolTips 기능1 : 돋보기를 클릭하면 상품정보 tool tip 출력되면서 돋보기모양이 닫기 버튼으로 변경
 ![tooltip1](https://user-images.githubusercontent.com/67889389/152312776-a1bd2d2a-a7b0-4a88-9c84-62ea51cfe290.gif)
-- ToolTip 기능2 : ToolTip이 노출되고 있는 상태에서 다른 가구를 선택하면 노출되고 있 던 ToolTip은 닫히고 새로 클릭한 가구 ToolTip만 노출
+<br/>
+- ToolTip 기능2 : ToolTip이 노출 상태에서 다른 가구를 선택시 노출 ToolTip은 닫히고 새로운 ToolTip만 노출
 ![tooltip2](https://user-images.githubusercontent.com/67889389/152313817-339a0a60-e400-48d8-b231-eae623e08e57.gif)
   <br/>
 
