@@ -2,9 +2,6 @@
 
 // 내가 추가한 것
 .vscode
-.eslintrc.json
-.prettierrc
-.prettierignore
 yarn.lock
 
 # dependencies
