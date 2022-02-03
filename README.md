@@ -25,6 +25,7 @@ https://inspiring-brahmagupta-94e9c7.netlify.app/
   - 닫기 버튼을 클릭하면 tool tip을 없애고 돋보기 버튼으로 변경
   - ToolTip이 노출되고 있는 상태에서 다른 가구를 선택하면 노출되고 있 던 ToolTip은 닫히고 새로 클릭한 가구 ToolTip만 노출
   - 가구 정보는 2가지 형식에 맞게 나타나도록 구현
+  - ToolTip이 위치에 따라서 나타나는 모양 다른것을 위치에 따라서 구현
 - 상품 목록 기능
   - 상품목록에서 해당 가구가 선택되었으면 tool tip 출력
   - 상품목록 Drag해서 Scroll 가능하게 구현
@@ -95,6 +96,14 @@ src
 
 ## 📽 시연 영상
 
+- ToolTips
+  - 돋보기를 클릭하면 상품정보 tool tip 출력되면서 돋보기모양이 닫기 버튼으로 변경
+  <br/>
+![tooltip1](https://user-images.githubusercontent.com/67889389/152312776-a1bd2d2a-a7b0-4a88-9c84-62ea51cfe290.gif)
+  <br/>
+  -- ToolTip이 노출되고 있는 상태에서 다른 가구를 선택하면 노출되고 있 던 ToolTip은 닫히고 새로 클릭한 가구 ToolTip만 노출
+  <br/>
+  <br/>
 
 
 
