@@ -1,6 +1,6 @@
-import React from "react";
-import { data } from "Common/Types/types";
-import "Components/HouseIntroduction/Scss/HouseIntroContentTooltipDescription.scss";
+import React from 'react';
+import { data } from 'Common/Types/types';
+import 'Components/HouseIntroduction/Scss/HouseIntroContentTooltipDescription.scss';
 
 type propsType = {
   topLocation: string;
@@ -41,7 +41,7 @@ function HouseIntroContentTooltipDescription({
             </span>
           )}
           <span className="tooltip--description__detail--price">
-            {datas.productList[number].priceDiscount.toLocaleString("eu")}
+            {datas.productList[number].priceDiscount.toLocaleString('eu')}
           </span>
           <div>
             <img src="/img/move.png" alt="상품보기" />

@@ -1,7 +1,7 @@
-import React, { Dispatch, SetStateAction } from "react";
-import { product, data } from "Common/Types/types";
-import HouseIntroContentTooltipDescription from "./HouseIntroContentToolTipDescription";
-import "Components/HouseIntroduction/Scss/HouseIntroContentTooltip.scss";
+import React, { Dispatch, SetStateAction } from 'react';
+import { product, data } from 'Common/Types/types';
+import HouseIntroContentTooltipDescription from './HouseIntroContentToolTipDescription';
+import 'Components/HouseIntroduction/Scss/HouseIntroContentTooltip.scss';
 
 type propsType = {
   width: number;
@@ -25,12 +25,12 @@ function HouseIntroContentTooltip({
   const top = `${p.pointX * 1.65}px`;
   const left = `${p.pointY * 1.65}px`;
 
-  const topLocation = p.pointX * 1.65 >= height * 0.4 ? "bottom" : "top";
-  const leftLocation = p.pointY * 1.65 >= width * 0.4 ? "right" : "left";
+  const topLocation = p.pointX * 1.65 >= height * 0.4 ? 'bottom' : 'top';
+  const leftLocation = p.pointY * 1.65 >= width * 0.4 ? 'right' : 'left';
 
   return (
     <div
-      className="tooltip tooltip"
+      className="tooltip"
       style={{
         top,
         left,

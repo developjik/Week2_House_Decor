@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
-import axios from "axios";
-import { product, data } from "Common/Types/types";
-import "Components/HouseIntroduction/Scss/HouseIntroContent.scss";
-import HouseIntroContentTooltip from "Components/HouseIntroduction/HouseIntroContentTooltip";
-import HouseIntroContentProduct from "./HouseIntroContentProduct";
+import React, { useEffect, useState, useRef } from 'react';
+import axios from 'axios';
+import { product, data } from 'Common/Types/types';
+import 'Components/HouseIntroduction/Scss/HouseIntroContent.scss';
+import HouseIntroContentTooltip from 'Components/HouseIntroduction/HouseIntroContentTooltip';
+import HouseIntroContentProduct from './HouseIntroContentProduct';
 
 function HomeIntroContent() {
   const [datas, setDatas] = useState<data>();
@@ -34,7 +34,7 @@ function HomeIntroContent() {
   useEffect(() => {
     async function fetchData() {
       await axios
-        .get("https://cdn.ggumim.co.kr/test/image_product_link.json")
+        .get('https://cdn.ggumim.co.kr/test/image_product_link.json')
         .then((res) => {
           setDatas(res.data);
         });
@@ -74,7 +74,6 @@ function HomeIntroContent() {
         </div>
 
         <div
-          aria-hidden="true"
           className="content__products"
           ref={scrollRef}
           onMouseDown={onMouseDown}
@@ -85,6 +84,7 @@ function HomeIntroContent() {
           onMouseLeave={() => {
             setIsDrag(false);
           }}
+          aria-hidden
         >
           {datas.productList.map((p: product, idx: number) => (
             <HouseIntroContentProduct

@@ -1,6 +1,6 @@
-import React, { Dispatch, SetStateAction } from "react";
-import { product } from "Common/Types/types";
-import "Components/HouseIntroduction/Scss/HouseIntroContentProduct.scss";
+import React, { Dispatch, SetStateAction } from 'react';
+import { product } from 'Common/Types/types';
+import 'Components/HouseIntroduction/Scss/HouseIntroContentProduct.scss';
 
 type propsType = {
   idx: number;
@@ -14,7 +14,7 @@ function HouseIntroContentProduct({ idx, number, p, setNumber }: propsType) {
     <div className="content__products--product">
       <button
         type="button"
-        className={number === idx ? "active" : "no-active"}
+        className={number === idx ? 'active' : 'no-active'}
         style={{ backgroundImage: `url(${p.imageUrl})` }}
         onClick={() => {
           setNumber(idx);
